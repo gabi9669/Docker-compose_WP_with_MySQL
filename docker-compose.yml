@@ -4,7 +4,6 @@ services:
   mysql:
     image: mysql
     container_name: mysqldb
-    restart: unless-stopped
     volumes:
       - db_data:/var/lib/mysql
     environment:
@@ -19,7 +18,6 @@ services:
       - mysql
     image: wordpress
     container_name: wordpress
-    restart: unless-stopped
     ports:
       - "80:80"
     environment:
