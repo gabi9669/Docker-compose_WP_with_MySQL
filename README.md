@@ -9,7 +9,7 @@ You can use this docker-compose file to stand up container on one machine, or yo
 In this case you have to specify one more environmental variable, what gives to your Wordpress the database address.
 
     WORDPRESS_DB_HOST: YOUR_DB_IP:3306;
-In this case you dont nedd the `depends_on` part in the docker-compose yaml file
+In this case you dont need the `depends_on` part in the docker-compose yaml file
 
 With these environmental variables you can specify your home page's URL.
 
